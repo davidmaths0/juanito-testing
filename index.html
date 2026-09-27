@@ -27,6 +27,8 @@
             padding: 90px 0 60px;
         }
 
+        /* Header */
+
         .header {
             text-align: center;
             margin-bottom: 55px;
@@ -47,6 +49,8 @@
             max-width: 520px;
             margin: 0 auto;
         }
+
+        /* Test cards */
 
         .tests {
             display: flex;
@@ -111,7 +115,7 @@
             color: #ffffff;
         }
 
-        /* Purpose message */
+        /* Purpose */
 
         .purpose {
             margin-top: 50px;
@@ -133,6 +137,87 @@
             font-weight: 600;
         }
 
+        /* What will you see */
+
+        .results-preview {
+            margin-top: 45px;
+            padding: 30px 28px;
+
+            background: #ffffff;
+            border: 1px solid #e5edf6;
+            border-radius: 14px;
+        }
+
+        .results-header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .results-header h2 {
+            font-size: 24px;
+            font-weight: 600;
+            color: #172b4d;
+            margin-bottom: 8px;
+        }
+
+        .results-header p {
+            font-size: 14px;
+            line-height: 1.6;
+            color: #8492a6;
+        }
+
+        /* Individual result */
+
+        .result-item {
+            margin-bottom: 22px;
+        }
+
+        .result-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .result-label {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 8px;
+        }
+
+        .result-name {
+            font-size: 14px;
+            font-weight: 600;
+            color: #34445c;
+        }
+
+        .result-percentage {
+            font-size: 13px;
+            font-weight: 600;
+            color: #3678c9;
+        }
+
+        /* Bar */
+
+        .bar-background {
+            width: 100%;
+            height: 10px;
+            background: #edf3f9;
+            border-radius: 20px;
+            overflow: hidden;
+        }
+
+        .bar-fill {
+            height: 100%;
+            width: 0%;
+            background: linear-gradient(
+                90deg,
+                #8fb8e8,
+                #3678c9
+            );
+            border-radius: 20px;
+
+            transition: width 1s ease;
+        }
+
         /* Footer */
 
         .footer {
@@ -141,6 +226,8 @@
             font-size: 13px;
             color: #a0aec0;
         }
+
+        /* Mobile */
 
         @media (max-width: 600px) {
 
@@ -163,6 +250,14 @@
             .test-info h2 {
                 font-size: 17px;
             }
+
+            .results-preview {
+                padding: 25px 20px;
+            }
+
+            .results-header h2 {
+                font-size: 22px;
+            }
         }
     </style>
 </head>
@@ -170,6 +265,8 @@
 <body>
 
     <main class="container">
+
+        <!-- Header -->
 
         <header class="header">
 
@@ -183,12 +280,15 @@
         </header>
 
 
+        <!-- Tests -->
+
         <section class="tests">
 
             <a href="#" class="test-card">
 
                 <div class="test-info">
                     <h2>Toxicity Test</h2>
+
                     <p>
                         Explore interpersonal behaviors and relationship patterns.
                     </p>
@@ -205,6 +305,7 @@
 
                 <div class="test-info">
                     <h2>Anxiety Test</h2>
+
                     <p>
                         Explore thoughts, feelings and reactions related to anxiety.
                     </p>
@@ -219,7 +320,7 @@
         </section>
 
 
-        <!-- Purpose message -->
+        <!-- Purpose -->
 
         <div class="purpose">
 
@@ -235,6 +336,124 @@
         </div>
 
 
+        <!-- What will you see -->
+
+        <section class="results-preview">
+
+            <div class="results-header">
+
+                <h2>What will you see?</h2>
+
+                <p>
+                    Your results will provide a visual overview of different
+                    behavioral and emotional traits.
+                </p>
+
+            </div>
+
+
+            <div class="results">
+
+                <div class="result-item">
+                    <div class="result-label">
+                        <span class="result-name">🗣️ Communication</span>
+                        <span class="result-percentage">0%</span>
+                    </div>
+
+                    <div class="bar-background">
+                        <div class="bar-fill"></div>
+                    </div>
+                </div>
+
+
+                <div class="result-item">
+                    <div class="result-label">
+                        <span class="result-name">🤝 Empathy</span>
+                        <span class="result-percentage">0%</span>
+                    </div>
+
+                    <div class="bar-background">
+                        <div class="bar-fill"></div>
+                    </div>
+                </div>
+
+
+                <div class="result-item">
+                    <div class="result-label">
+                        <span class="result-name">😡 Conflict Management</span>
+                        <span class="result-percentage">0%</span>
+                    </div>
+
+                    <div class="bar-background">
+                        <div class="bar-fill"></div>
+                    </div>
+                </div>
+
+
+                <div class="result-item">
+                    <div class="result-label">
+                        <span class="result-name">🧱 Boundaries</span>
+                        <span class="result-percentage">0%</span>
+                    </div>
+
+                    <div class="bar-background">
+                        <div class="bar-fill"></div>
+                    </div>
+                </div>
+
+
+                <div class="result-item">
+                    <div class="result-label">
+                        <span class="result-name">🪞 Self-Criticism</span>
+                        <span class="result-percentage">0%</span>
+                    </div>
+
+                    <div class="bar-background">
+                        <div class="bar-fill"></div>
+                    </div>
+                </div>
+
+
+                <div class="result-item">
+                    <div class="result-label">
+                        <span class="result-name">❤️ Emotional Dependence</span>
+                        <span class="result-percentage">0%</span>
+                    </div>
+
+                    <div class="bar-background">
+                        <div class="bar-fill"></div>
+                    </div>
+                </div>
+
+
+                <div class="result-item">
+                    <div class="result-label">
+                        <span class="result-name">🎭 Need for Approval</span>
+                        <span class="result-percentage">0%</span>
+                    </div>
+
+                    <div class="bar-background">
+                        <div class="bar-fill"></div>
+                    </div>
+                </div>
+
+
+                <div class="result-item">
+                    <div class="result-label">
+                        <span class="result-name">🔥 Anger Management</span>
+                        <span class="result-percentage">0%</span>
+                    </div>
+
+                    <div class="bar-background">
+                        <div class="bar-fill"></div>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+
         <!-- Footer -->
 
         <footer class="footer">
@@ -243,6 +462,37 @@
 
 
     </main>
+
+
+    <!-- JavaScript -->
+
+    <script>
+
+        const results = document.querySelectorAll(".result-item");
+
+        results.forEach(result => {
+
+            const percentageElement =
+                result.querySelector(".result-percentage");
+
+            const bar =
+                result.querySelector(".bar-fill");
+
+            // Random percentage between 35 and 95
+            const percentage =
+                Math.floor(Math.random() * 61) + 35;
+
+            percentageElement.textContent =
+                percentage + "%";
+
+            // Small delay for the animation
+            setTimeout(() => {
+                bar.style.width = percentage + "%";
+            }, 150);
+
+        });
+
+    </script>
 
 </body>
 </html>
