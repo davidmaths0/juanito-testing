@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Anxiety Test (GAD-7) — Personality Tests</title>
+
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/quiz.css">
+</head>
+
+<body>
+
+    <!-- Site header (same on every page) -->
+
+    <header class="site-header">
+        <div class="site-header-inner">
+            <a href="../index.html" class="site-logo">🧠 Psychology Tests</a>
+        </div>
+    </header>
+
+    <main class="container">
+        <div id="quiz-app"><!-- QuizEngine renders here --></div>
+    </main>
+
+    <!-- 1. Generic engine (shared by every test) -->
+    <script src="../js/quiz-engine.js"></script>
+
+    <!-- 2. This test's data (unique per test) -->
+    <script src="../js/tests/gad7-data.js"></script>
+
+    <!-- 3. Wire them together -->
+    <script>
+        new QuizEngine({
+            container: "#quiz-app",
+            testData: window.QuizData.gad7
+        });
+    </script>
+
+</body>
+</html>
