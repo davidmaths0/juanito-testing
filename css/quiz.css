@@ -9,6 +9,20 @@
     padding: 32px 28px;
 }
 
+.about-condition {
+    margin-top: 24px;
+}
+
+.about-condition h2 {
+    font-size: 20px;
+}
+
+.about-condition p:not(.quiz-attribution) {
+    font-size: 14px;
+    line-height: 1.7;
+    color: var(--color-muted);
+}
+
 .quiz-card h1 {
     font-size: 28px;
     color: var(--color-heading);
@@ -45,19 +59,6 @@
     color: var(--color-subtle);
     font-size: 13px;
     margin-bottom: 26px;
-}
-
-.quiz-saved-notice {
-    display: inline-block;
-    margin-bottom: 20px;
-    padding: 8px 16px;
-
-    background: var(--color-primary-soft);
-    border-radius: var(--radius-md);
-
-    font-size: 13px;
-    font-weight: 600;
-    color: var(--color-primary);
 }
 
 .quiz-attribution {
